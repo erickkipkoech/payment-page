@@ -1,0 +1,276 @@
+body{
+  width: 90vw;
+  height: auto;
+}
+
+header {
+  position: absolute;
+  width: 1440px;
+  height: 70px;
+  left: 0px;
+  top: 0px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+header div {
+  position: absolute;
+  width: 155px;
+  height: 42.96px;
+  left: 50px;
+  top: 22px;
+  display: flex;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  color: #064164;
+  justify-content: center;
+}
+header div img {
+  width: 80%;
+  height: 80%;
+  left: 46px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 30px 60px;
+  position: absolute;
+  width: 500px;
+  height: 600px;
+  left: 24rem;
+  top: 100px;
+  background: #ffffff;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+form h2 {
+  width: 100%;
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+  color: #033f63;
+  padding-top: 10px;
+}
+
+form .div-inputs:not(:first-child) {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px 0px 0px;
+  width: 100%;
+  height: 13%;
+  top: 1rem;
+}
+form .div-inputs-first{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px 0px 0px;
+  width: 100%;
+  height: 13%;
+  top: 1rem;
+}
+
+input {
+  outline: none;
+}
+.label {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(3, 63, 99, 0.6);
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.label span {
+  color: red;
+}
+.input {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  border: 1px solid rgba(3, 63, 99, 0.2);
+  box-shadow: inset 0px 2px 2px -1px rgba(74, 74, 104, 0.1);
+  border-radius: 6px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.contact {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 13%;
+}
+.contact #phone {
+  padding-right: 1rem;
+}
+.contact #phone input{
+  display: block;
+  height: 50%;
+}
+.contact #amount input {
+  display: block;
+  height: 50%;
+}
+.contact #phone label{
+  display: block;
+  margin-top: 1rem;
+}
+.contact #amount label {
+  display: block;
+  margin-top: 1rem;
+}
+
+.row-inputs {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  border: 1px solid rgba(3, 63, 99, 0.2);
+  box-shadow: inset 0px 2px 2px -1px rgba(74, 74, 104, 0.1);
+  border-radius: 6px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1rem;
+}
+.description textarea {
+  height: 100px;
+  outline: none;
+  border: 1px solid rgba(3, 63, 99, 0.2);
+  border-radius: 6px;
+}
+#phone,
+#amount {
+  width: 50%;
+}
+#phone input,
+#amount input {
+  height: 125%;
+}
+.submit-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-top: 2rem;
+  width: 100%;
+  height: 7%;
+}
+.submit-btn input {
+  width: 100%;
+  height: 80%;
+  background: #033f63;
+  color: #fff;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 17px;
+  line-height: 17px;
+  border-radius: 6px;
+}
+@media only screen and (max-width: 480px) {
+  body{
+    width:100vw;
+    height: 600px;
+    margin-bottom: 1rem;
+  }
+  header {
+    width: 100%;
+    height: 60px;
+  }
+  header div {
+    left: 5px;
+    width: 100px;
+    height: 40px;
+    top: 15px;
+  }
+  header div img {
+    left: 0;
+  }
+  form {
+    left: 0rem;
+    width:auto;
+    height: 470px;
+    margin: 1rem;
+    top: 70px;
+  }
+  form h2 {
+    font-weight: 800;
+    font-size: 12px;
+  }
+  form .div-inputs:not(:first-child) {
+    top: 1rem;
+    height: 20%;
+    margin-top: 1.5rem;
+  }
+  form .div-inputs-first{
+    top: 1rem;
+    height: 20%;
+  }
+  .label {
+    font-size: 10px;
+    line-height: 0px;
+    margin: 0.5rem;
+    display: flex;
+  }
+  .input {
+    height: 90%;
+  }
+  .contact{
+    flex-direction: column;
+    height: 25%;
+  }
+  .contact #phone label{
+    display: flex;
+    margin-top: 3rem;
+    width: fit-content;
+    white-space: nowrap;
+  }
+  .contact #amount label {
+    margin-top: 1.8rem;
+  }
+  .description {
+    margin-top: 2.5rem;
+  }
+  .contact #phone input{
+    height: 40%;
+    width: 200%;
+  }
+.contact #amount input {
+  height: 55%;
+  width: 200%;
+}
+.description textarea {
+  height: 70px;
+}
+.submit-btn {
+  width: 100%;
+  height: 20%;
+}
+.submit-btn input {
+  height: 120%;
+  font-size: 12px;
+}
+  
+}
